@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #ffffff;
+    overflow: hidden;
+    margin-left: 10%;
+}
+header a {
+    float: left;
+    display: block;
+    color: #071e3e;
+    text-align: center;
+    padding: 45px 50px;
+    text-decoration: none;
+}
+header a:hover {
+    background-color: #071e3e;
+    color: rgb(255, 243, 243);
+}
+.logo {
+    float: left;
+    padding: 5px;
+}
+
+#tractoindex{
+    padding: 20px;
+    width: 97%;
+    height: 800PX;
+}
+
+/* Estilos para la página de unidades */
+.contenedor-unidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.unidad {
+    width: 300px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.unidad img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0; /* Redondea solo la esquina superior */
+}
+
+.descripcion {
+    padding: 15px;
+    background-color: #f8f9fa;
+}
+
+.descripcion h3 {
+    margin-top: 0;
+}
+
+.descripcion p {
+    margin-bottom: 0;
+}
+
+
+
+
+

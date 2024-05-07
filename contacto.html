@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - TRF SOLUCIONES LOGISTICAS</title>
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="imagenes/trf.logo.webp" alt="Logo">
+    </div>
+    <a href="index.html">Inicio</a>
+    <a href="unidades.html">Unidades</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="contacto.html">Contacto</a>
+</header>
+
+<!-- Contenido de la página -->
+<div class="contenido-contacto">
+    <h1>Contacto</h1>
+    <p>¡Gracias por visitar nuestro sitio web! Si tienes alguna pregunta, comentario o consulta, no dudes en ponerte en contacto con nosotros utilizando el formulario de abajo o a través de los datos de contacto proporcionados.</p>
+    
+    <form action="enviar.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+
+</body>
+</html>
