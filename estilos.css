@@ -103,7 +103,7 @@ header a:hover {
     margin-bottom: 5px;
 }
 
-/* Estilos para footer 
+/*Estilos para footer */
 
 *{
     margin: 0;
@@ -182,7 +182,7 @@ a:hover{
     color: #ffffff;
 }
 .social-icons i:hover{
-    color: #f18930;
+    color: #7c161c;
 }
 .bottom-bar{
     background: #7c161c;
@@ -198,4 +198,3 @@ a:hover{
 }
 
 
-*/
