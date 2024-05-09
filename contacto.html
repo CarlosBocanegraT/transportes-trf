@@ -22,47 +22,36 @@
 </header>
 
 <!-- Contenido de la página -->
-<div class="container">
-    <div class="row">
-      <div class="col col-lg-6">
-        <div class="left">
-          <h1>Lets Talk</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, nam mollitia dignissimos voluptas provident adipisci dolorum? Doloribus enim harum tenetur minus fugit mollitia,</p>
-          <div class="email">Email
-              <p><i class="fa-solid fa-envelope"></i> YourMail@gmail.com</p>
-          </div>
-          <div class="social">
-              Social Media
-              <li><i class="fa-brands fa-instagram"></i> Instagram</li>
-              <li><i class="fa-brands fa-facebook"></i> Facebook</li>
-              <li><i class="fa-brands fa-twitter"></i> Twitter</li>
-          </div>
-        </div>
-      </div><!--col end--->
-      
-      <div class="col col-lg-6">
-          <div class="right">
-              <form action="">
-                  <label htmlFor="/" class="form-label" >Name</label> <br />
-                  <input type="text" class="form-control" placeholder="Enter your name" /> <br />
-                  <label htmlFor="/" class="form-label">Email</label> <br />
-                  <input type="text" class="form-control" placeholder="Enter Your Email" /> <br />
-                  <label htmlFor="/" class="form-label">Select</label> <br />
-                  <select name="" id="" class="form-select">
-                      <option value="">Select</option>
-                      <option value="">Problem 1</option>
-                      <option value="">Problem 2</option>
-                      <option value="">Problem 3</option>
-                      <option value="">Problem 4</option>
-                  </select> <br />
-                  <label htmlFor="" class="form-label">Message</label> <br />
-                  <textarea name="" id="" cols="30" rows="3" class="form-control"  placeholder="Enter Your Message"></textarea> <br />
-                  <button class="btn btn-primary " type="submit">Submit Query</button>
-              </form>
-          </div>
-      </div> <!--col end--->
-    </div> <!--row end-->
-  </div> <!--container end--->
+<div class="container-contacto">
+    <div class="contacto-info">
+        <h2>Información de Contacto</h2>
+        <p>Email: info@example.com</p>
+        <p>Teléfono: +121 56556 565556</p>
+        <p>Dirección: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <ul class="social-icons">
+            <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+        </ul>
+    </div>
+
+    <div class="formulario-contacto">
+        <h2>Contacto</h2>
+        <form action="">
+            <label for="name" class="form-label">Nombre</label><br>
+            <input type="text" id="name" class="form-control" placeholder="Ingrese su nombre" required><br>
+
+            <label for="email" class="form-label">Email</label><br>
+            <input type="email" id="email" class="form-control" placeholder="Ingrese su email" required><br>
+
+            <label for="message" class="form-label">Mensaje</label><br>
+            <textarea id="message" class="form-textarea" rows="4" placeholder="Ingrese su mensaje" required></textarea><br>
+
+            <button type="submit" class="btn-submit">Enviar Consulta</button>
+        </form>
+    </div>
+</div>
   <footer>
     <div class="container">
         <div class="footer-content">
