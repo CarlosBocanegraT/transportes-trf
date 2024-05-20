@@ -1,27 +1,31 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: white;
+    background: white;
 }
+
+/* Estilos básicos para el header */
 header {
     background-color: rgb(255, 255, 255);
     overflow: hidden;
-    margin-left: 0%;
-}
-header a {
-    float: right;
-    display: block;
-    color: #071e3e;
-    text-align: center;
-    padding: 30px 40px;
-    text-decoration: none;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header nav{
-    float: right;
+header .logo img {
+    height: 50px;
+}
+
+nav {
     display: flex;
+    gap: 20px;
+}
+
+nav a {
     color: #071e3e;
     text-align: center;
-    padding: 30px 40px;
+    padding: 10px 20px;
     text-decoration: none;
 }
 
@@ -30,6 +34,60 @@ header a:hover {
     color: rgb(255, 243, 243);
     border-radius: 10px;
 }
+
+/* Estilos para el icono del menú en móviles */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    nav a {
+        padding: 15px;
+        border-top: 1px solid #071e3e;
+        border-bottom: 1px solid #071e3e;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+}
+
+
+h4{
+    font-size: 120%;
+    padding: 0.5%;
+    color: #071e3e;
+}
+
+h1{
+    font-size: 200%;
+    padding: 0.5%;
+    color: #7c161c;
+}
+
 .logo {
     float: left;
     padding: 1%;
@@ -79,39 +137,57 @@ header a:hover {
 
 .mision-vision-valores {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
 }
 
 .mision,
 .vision,
 .valores {
-    flex: 1;
-    text-align: center;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 450px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #7c161c;
 }
 
 .mision h2,
 .vision h2,
 .valores h2 {
-    margin-top: 0;
+    font-family: monospace;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: white;
 }
 
 .valores ul {
-    padding: 0;
-    list-style: none;
+    padding: 2%;
+    list-style: disc;
+    color: #ccc;
 }
 
 .valores ul li {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+
 }
 
+.mision p,
+.vision p,
+.valores p {
+    color: white;
+    padding: 2%;
+}
+
+.vision{
+    background-color: #04345e;
+}
+
+/* Estilos para footer */
 /* Estilos para footer */
 footer {
     background: #071e3e;
     padding-top: 50px;
-    color: white; /* Establecer el color de las letras del pie de página */
+    color: rgb(255, 255, 255); /* Establecer el color de las letras del pie de página */
 }
 
 /* Selector específico para el texto del pie de página */
@@ -120,14 +196,17 @@ footer p {
 }
 
 .container {
-    width: 1140px;
+    width: 100%;
+    max-width: 1140px;
     margin: auto;
     display: flex;
+    flex-wrap: unset; /* Permite que los elementos se ajusten en varias filas */
     justify-content: center;
 }
 
 .footer-content {
     width: 33.3%;
+    padding: 10px; /* Añade un padding para separación entre columnas */
 }
 
 h3 {
@@ -216,7 +295,18 @@ a:hover {
     padding: 7px;
 }
 
-/* estilos para la seccion de nosotros */
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .footer-content {
+        width: 100%; /* Las columnas ocupan el 100% del ancho en pantallas pequeñas */
+    }
+    
+    .footer-content p {
+        width: auto; /* Ajusta el ancho de los párrafos */
+    }
+}
+
+
 /* Estilos para la sección de contacto */
 .container-contacto {
     display: flex;

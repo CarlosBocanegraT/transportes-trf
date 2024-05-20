@@ -15,15 +15,22 @@
         </div>
         <nav>
             <a href="index.html">Inicio</a>
-            <a href="Unidades.html">Unidades</a>
+            <a href="unidades.html">Unidades</a>
             <a href="servicios.html">Servicios</a>
             <a href="nosotros.html">Nosotros</a>
             <a href="contacto.html">Contacto</a>
-            <a href="prueba.html">prueba</a>
-
-            
-    </nav>
+        </nav>
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
     </header>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.menu-icon').addEventListener('click', function() {
+                document.querySelector('nav').classList.toggle('active');
+            });
+        });
+    </script>
 
     <div class="carousel">
         <div class="carousel-inner">
@@ -41,13 +48,10 @@
         <a class="carousel-control next" onclick="nextSlide()">&#10095;</a>
     </div>
 
-    <div>
-        <h1>Nuestra Ubicación</h1>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d6289.325781570268!2d-100.03019178567547!3d20.39708993966433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDIzJzQ2LjEiTiAxMDDCsDAxJzM3LjkiVw!5e0!3m2!1ses-419!2smx!4v1715113355228!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div class="seguimiento">
+   
+    <!--<div class="seguimiento">
         <img src="imagenes/seguimiento.png" alt="seguimiento">
-    </div>
+    </div>-->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -81,6 +85,6 @@
         </div>
     </footer>
 
-    <script src="scripts.js"></script>
+    <!--<script src="scripts.js"></script> -->
 </body>
 </html>
