@@ -37,7 +37,7 @@ header a:hover {
 
 /* Estilos para el icono del menú en móviles */
 .menu-icon {
-    display: none;
+    display: block;
     font-size: 24px;
     cursor: pointer;
 }
@@ -156,7 +156,7 @@ h1{
 .valores h2 {
     font-family: monospace;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 180px;
     color: white;
 }
 
@@ -384,18 +384,25 @@ a:hover {
     width: 45%;
     margin-bottom: 30px;
     padding: 20px;
-    background-color: #fff;
+    background-color: #04345e;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column; /* Mostrar elementos en columna */
     align-items: center; /* Alinear elementos al centro */
     text-align: center;
+
+}
+
+.servicio h2,
+.servicio p{
+    color: white;
 }
 
 .servicio img {
     max-width: 150px; /* Tamaño máximo de la imagen */
     height: auto;
     margin-bottom: 20px; /* Espacio inferior entre la imagen y el texto */
+    
 }
 
 /* Estilos para dispositivos móviles */
