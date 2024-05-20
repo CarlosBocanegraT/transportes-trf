@@ -6,59 +6,81 @@
     <title>TRF SOLUCIONES LOGISTICAS</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    <script src="script.js"></script>
 </head>
 <body>
-
-<header>
-    <div class="logo">
-        <img src="imagenes/trf.logo.webp" alt="Logo">
-    </div>
-    <a href="index.html">Inicio</a>
-    <a href="Unidades.html">Unidades</a>
-    <a href="servicios.html">Servicios</a>
-    <a href="nosotros.html">Nosotros</a>
-    <a href="contacto.html">Contacto</a>
-</header>
-
-<div>
-    <img src="imagenes/tractoejemplo.JPG" alt="tractoejemplo" id="tractoindex">    
-</div>
-<div>
-    <h1>Nuestra Ubicación</h1>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d6289.325781570268!2d-100.03019178567547!3d20.39708993966433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDIzJzQ2LjEiTiAxMDDCsDAxJzM3LjkiVw!5e0!3m2!1ses-419!2smx!4v1715113355228!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
-<footer>
-    <div class="container">
-        <div class="footer-content">
-            <h3>Contactate con Nosotros</h3>
-            <p>Email:Info@example.com</p>
-            <p>Telefono:+121 56556 565556</p>
-            <p>Direccion: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <header>
+        <div class="logo">
+            <img src="imagenes/trf.logo.webp" alt="Logo">
         </div>
-        <div class="footer-content">
-            <h3>Enlaces</h3>
-             <ul class="list">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="Unidades.html">Unidades</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-             </ul>
-        </div>
-        <div class="footer-content">
-            <h3>Síguenos</h3>
-            <ul class="social-icons">
-             <li><a href=""><i class="fab fa-facebook"></i></a></li>
-             <li><a href=""><i class="fab fa-twitter"></i></a></li>
-             <li><a href=""><i class="fab fa-instagram"></i></a></li>
-             <li><a href=""><i class="fab fa-linkedin"></i></a></li>
-            </ul>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="Unidades.html">Unidades</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="prueba.html">prueba</a>
+
+            
+    </nav>
+    </header>
+
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagenes/montana.jpg" alt="Imagen 1">
             </div>
+            <div class="carousel-item">
+                <img src="imagenes/carr1.jpg" alt="Imagen 2">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/tractoejemplo.JPG" alt="Imagen 3">
+            </div>
+        </div>
+        <a class="carousel-control prev" onclick="prevSlide()">&#10094;</a>
+        <a class="carousel-control next" onclick="nextSlide()">&#10095;</a>
     </div>
-    <div class="bottom-bar">
-        <p>&copy;  2024 TRF SOLUCIONES LOGISTICAS - Todos los derechos reservados.</p>
+
+    <div>
+        <h1>Nuestra Ubicación</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d6289.325781570268!2d-100.03019178567547!3d20.39708993966433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDIzJzQ2LjEiTiAxMDDCsDAxJzM3LjkiVw!5e0!3m2!1ses-419!2smx!4v1715113355228!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-</footer>
+    <div class="seguimiento">
+        <img src="imagenes/seguimiento.png" alt="seguimiento">
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Contactate con Nosotros</h3>
+                <p>Email:Info@example.com</p>
+                <p>Telefono:+121 56556 565556</p>
+                <p>Direccion: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="footer-content">
+                <h3>Enlaces</h3>
+                <ul class="list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Unidades.html">Unidades</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Síguenos</h3>
+                <ul class="social-icons">
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy;  2024 TRF SOLUCIONES LOGISTICAS - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
