@@ -30,7 +30,3 @@ document.addEventListener('DOMContentLoaded', () => {
     showSlide(currentIndex);
     startCarousel();
 });
-
-
-document.querySelector('.menu-icon').addEventListener('click', function() {
-    document.querySelector('nav').classList.toggle('active');
