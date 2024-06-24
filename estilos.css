@@ -463,3 +463,10 @@ a:hover {
     text-align: center;
     margin-top: 18px;
 }
+
+.seguimiento {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
