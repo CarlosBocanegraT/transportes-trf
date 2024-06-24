@@ -457,3 +457,9 @@ a:hover {
 .carousel-control.next {
     right: 10px;
 }
+
+.counter {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 18px;
+}

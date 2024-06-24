@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incremento de Número</title>
+    <style>
+        .counter {
+            font-size: 2em;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p>Somos una empresa de transporte terrestre con <div class="counter" id="counter">10</div> años de experiencia,</p>
+    <p>comprometidos con la satisfacción de nuestros clientes garantizando el</p>
+    <p>servicio de una forma segura, puntual y eficiente.</p>
+
+    <script>
+        // JavaScript para incrementar y decrementar el número en un bucle
+        function animateNumber(elementId, start, end, duration) {
+            const element = document.getElementById(elementId);
+            let startTime = null;
+            let direction = 1;  // 1 para incremento, -1 para decremento
+
+            function animation(currentTime) {
+                if (startTime === null) startTime = currentTime;
+                const progress = (currentTime - startTime) / duration;
+                const value = Math.floor(progress * (end - start) * direction + start);
+
+                if (direction === 1 && value >= end) {
+                    direction = -1;
+                    startTime = currentTime;
+                } else if (direction === -1 && value <= start) {
+                    direction = 1;
+                    startTime = currentTime;
+                }
+
+                element.innerText = Math.abs(value);
+
+                requestAnimationFrame(animation);
+            }
+
+            requestAnimationFrame(animation);
+        }
+
+        // Llamada a la función de animación
+        animateNumber('counter', 0, 10, 2000);  // Ajusta la duración según tus necesidades
+    </script>
+</body>
+</html>
