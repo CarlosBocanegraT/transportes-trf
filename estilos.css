@@ -312,13 +312,18 @@ a:hover {
 /* Estilos para la sección de contacto */
 .container-contacto {
     display: flex;
+    background-image: url('imagenes/FONDOO.jpeg'); /* Ruta a tu imagen de fondo */
+    background-size: 50% auto; /* La imagen ocupa el 50% del ancho del contenedor y se ajusta automáticamente en altura */
+    background-position: left center; /* Posiciona la imagen de fondo a la izquierda y la centra verticalmente */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
     justify-content: space-between; /* Distribuye los elementos en el contenedor */
     align-items: flex-start; /* Alinea los elementos en la parte superior */
-    padding: 50px 0;
+    padding: 50px 0; /* Ajusta el padding superior e inferior */
 }
 
 .contacto-info {
     width: 45%; /* Ancho de la parte de la información de contacto */
+    color: white;
 }
 
 .formulario-contacto {
