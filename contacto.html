@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="icon" href="imagenes/iconotrf.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    scr
 
 </head>
 <body>
@@ -27,6 +28,14 @@
         <i class="fas fa-bars"></i>
     </div>
 </header>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('.menu-icon').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+    });
+</script>
+<h4>Contacto</h4>
 <div class="custom-content">
 
     <!--<h1 class="custom-logo">Contact <span></span></h1> -->
@@ -34,31 +43,29 @@
     <div class="custom-contact-wrapper animated bounceInUp">
         <div class="custom-contact-form">
             <h3>Contactanos!</h3>
-            <form action="">
+            <form action="https://formsubmit.co/ kantuz2004@gmail.com " method="POST">
                 <p>
-                    <label>Nombre</label>
-                    <input type="text" name="fullname">
+                    <label for="fullname">Nombre:</label>
+                    <input type="text" id="fullname" name="fullname" required>
                 </p>
                 <p>
-                    <label>Correo Electronico</label>
-                    <input type="email" name="email">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" name="email" required>
                 </p>
                 <p>
-                    <label>Numero de Telefono</label>
-                    <input type="tel" name="phone">
+                    <label for="phone">Número de Teléfono:</label>
+                    <input type="tel" name="phone" required>
                 </p>
                 <p>
-                    <label>Affair</label>
-                    <input type="text" name="affair">
+                    <label for="comp">Compañía:</label>
+                    <input type="text"  name="comp" required>
                 </p>
                 <p class="custom-block">
-                   <label>Mensaje</label> 
-                    <textarea name="message" rows="3"></textarea>
+                    <label for="message">Mensaje:</label>
+                    <textarea name="message" rows="3" required></textarea>
                 </p>
-                <p class="custom-block">
-                    <button>
-                        Enviar
-                    </button>
+                <p>
+                    <button type="submit">Enviar</button>
                 </p>
             </form>
         </div>

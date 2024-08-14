@@ -121,3 +121,8 @@ body {
         color: #ffffff;
     }
 }
+
+.menu-icon i {
+    color: #000; /* Cambia el color a negro */
+    font-size: 24px; /* Ajusta el tamaño del ícono según sea necesario */
+}
