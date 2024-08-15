@@ -415,11 +415,16 @@ a:hover {
 
 /*carrucel */
 
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 .carousel {
     position: relative;
     max-width: 100%;
-    /*height: 30%;*/
-    margin: 2%;
     overflow: hidden;
 }
 
@@ -429,32 +434,52 @@ a:hover {
 }
 
 .carousel-item {
+    position: relative;
     min-width: 100%;
     box-sizing: border-box;
 }
 
 .carousel-item img {
     width: 100%;
+    height: auto;
 }
 
-.carousel-control {
+.overlay-text {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    font-size: 2em;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.overlay-text h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.overlay-text p {
+    margin: 10px 0;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
     cursor: pointer;
-    user-select: none;
 }
 
-.carousel-control.prev {
-    left: 10px;
+button:hover {
+    background-color: #0056b3;
 }
 
-.carousel-control.next {
-    right: 10px;
-}
 
+/********************************/
 .counter {
     font-size: 50px;
     text-align: center;
@@ -470,41 +495,71 @@ a:hover {
 .logoindex{
     color: unset;
 }
+/**********************************/
 
 .image-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* Asegura que el contenedor use todo el ancho disponible */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    overflow: hidden;
+    border-radius: 10px; /* Opcional: Agrega bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: Agrega una sombra sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+    height: 300px; /* Ajusta la altura según tus necesidades */
+}
+
+.image-container:hover {
+    transform: scale(1.05); /* Agranda ligeramente el contenedor */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Aumenta la sombra en hover */
 }
 
 .seguimientos {
-    max-width: 100%; /* La imagen no será más ancha que su contenedor */
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
     height: auto; /* Mantiene la proporción de la imagen */
 }
+
 /*--------------------------------*/
 
 .pqe {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
-    padding: 20px;
-}
-.pqeb {
-    width: 100%; /* Asegura que las cajas ocupen el ancho completo de su columna */
-    margin-bottom: 0; /* Elimina el margen inferior ya que el gap lo manejará */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
+    justify-content: space-between;
 }
 
-@media (min-width: 768px) {
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
+.pqeb {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 calc(33.333% - 40px); /* Tres columnas en pantallas más grandes */
+    box-sizing: border-box;
+}
+
+.pqeb:hover {
+    transform: scale(1.05); /* Agranda ligeramente el elemento al pasar el mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.pqeb h4 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.pqeb p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .pqeb {
+        flex: 1 1 calc(50% - 40px); /* Dos columnas en pantallas medianas */
     }
 }
-@media (min-width: 1024px) {
-    .grid {
-        grid-template-columns: repeat(3, 1fr);
+
+@media (max-width: 480px) {
+    .pqeb {
+        flex: 1 1 100%; /* Una columna en pantallas pequeñas */
     }
 }
